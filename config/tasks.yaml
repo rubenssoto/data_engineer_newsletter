@@ -1,0 +1,76 @@
+consume_rss_feed:
+  description: >
+    Your task is to get a list of articles using the tool RSSFeedTool.
+  expected_output: >
+    The final output should be a list of all the articles retrieved using the tool.
+
+    <EXAMPLE OF OUTPUT>
+    Title: Python One Billion Row Challenge — From 10 Minutes to 4 Seconds
+    Link: https://towardsdatascience.com/python-one-billion-row-challenge-from-10-minutes-to-4-seconds-0718662b303e?source=rss-689ba04bb8be------2
+    Published: Wed, 08 May 2024
+    </EXAMPLE OF OUTPUT>
+
+extract_content_summary:
+  description: >
+    Your task is to get more information about each article previous selected using
+    the tool GetWebsiteContent.
+  expected_output: >
+    The final output should be a list of all the articles previous selected with all
+    the information retrieved from the tool GetWebsiteContent.
+
+    <EXAMPLE OF OUTPUT>
+    Title: Python One Billion Row Challenge — From 10 Minutes to 4 Seconds
+    Link: https://towardsdatascience.com/python-one-billion-row-challenge-from-10-minutes-to-4-seconds-0718662b303e?source=rss-689ba04bb8be------2
+    Published: Wed, 08 May 2024
+    Summary: A data lakehouse combines the best attributes of data warehouses and data lakes to address their respective limitations. 
+    It offers scalability at lower costs and supports various data types, including structured, semi-structured, and unstructured. 
+    This hybrid architecture enables businesses to move away from traditional two-tier architecture and reduce operational costs.
+    </EXAMPLE OF OUTPUT>
+
+curate_articles:
+  description: >
+    Your task is to carefully review a list of articles related to data engineering and 
+    curate the top 10 most relevant and resonant ones. The selection should be based 
+    on the articles' significance, relevance to current trends, and their potential 
+    impact on the data engineering community. Your goal is to ensure that the curated 
+    list represents the best and most insightful content available, providing valuable 
+    resources for data engineers.
+  expected_output: >
+    Your final output should be a list of the top 10 articles that are not only highly 
+    relevant to the data engineering field but also resonate strongly with the current 
+    needs and interests of data engineers. Each article on the list should be a standout 
+    piece that offers significant value.
+
+    You must only select articles from the provided list and are strictly prohibited 
+    from adding any additional articles. If the list does not contain enough articles 
+    to reach a total of 10, leave the list incomplete and do not supplement it with other sources.
+
+    Format in Markdown
+
+    <EXAMPLE OF OUTPUT>
+    Title: Python One Billion Row Challenge — From 10 Minutes to 4 Seconds
+    Link: https://towardsdatascience.com/python-one-billion-row-challenge-from-10-minutes-to-4-seconds-0718662b303e?source=rss-689ba04bb8be------2
+    Published: Wed, 08 May 2024
+    Summary: A data lakehouse combines the best attributes of data warehouses and data lakes to address their respective limitations. 
+    It offers scalability at lower costs and supports various data types, including structured, semi-structured, and unstructured. 
+    This hybrid architecture enables businesses to move away from traditional two-tier architecture and reduce operational costs.
+    </EXAMPLE OF OUTPUT>
+
+improve_newsletter_based_on_critique:
+  description: >
+    Please review the list you created and assess whether each article is truly relevant 
+    to the data engineering field. Make any necessary adjustments if required.
+  expected_output: >
+
+    IMPORTANT: The Revised list of 10 articles highly relevant for the Data Engineering Field.
+
+    Format in Markdown
+
+    <EXAMPLE OF OUTPUT>
+    Title: Python One Billion Row Challenge — From 10 Minutes to 4 Seconds
+    Link: https://towardsdatascience.com/python-one-billion-row-challenge-from-10-minutes-to-4-seconds-0718662b303e?source=rss-689ba04bb8be------2
+    Published: Wed, 08 May 2024
+    Summary: A data lakehouse combines the best attributes of data warehouses and data lakes to address their respective limitations. 
+    It offers scalability at lower costs and supports various data types, including structured, semi-structured, and unstructured. 
+    This hybrid architecture enables businesses to move away from traditional two-tier architecture and reduce operational costs.
+    </EXAMPLE OF OUTPUT>
